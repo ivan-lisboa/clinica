@@ -1,7 +1,7 @@
 clinica
 
 # Funcionalidades Principais (Front-end)
-.O projeto atual foca na estrutura e design das seguintes páginas:
+O projeto atual foca na estrutura e design das seguintes páginas:
 
 Página Inicial (index.html): Apresentação da clínica, serviços, especialidades e depoimentos.
 
