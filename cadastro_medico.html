@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Médico - Clínica xxxxx</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Cadastro de médicos para a Clínica MedVida">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <i class="fas fa-heartbeat logo-icone"></i>
+            <h1>Clínica <span>xxxxx</span></h1>
+        </div>
+        
+        <nav class="menu-navegacao">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-botao">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul class="menu-lista">
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li> 
+                <li><a href="agendamento.html"><i class="far fa-calendar-alt"></i> Agendar Consulta</a></li>
+                <li><a href="cadastro_paciente.html"><i class="fas fa-user-plus"></i> Registro de Pacientes</a></li>
+                <li><a href="cadastro_medico.html" class="ativo"><i class="fas fa-user-md"></i> Registro Médico</a></li>
+                <li><a href="login.html" class="botao-login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="formulario-container cadastro-medico">
+            <h2>Registro de Novo Médico</h2>
+            <p>Preencha os dados profissionais para adicionar um novo membro à equipe.</p>
+            
+            <form action="#" method="POST" class="formulario-cadastro">
+                
+                <div class="campo-formulario">
+                    <label for="nome_medico"><i class="fas fa-user-md"></i> Nome Completo do Médico(a):</label>
+                    <input type="text" id="nome_medico" name="nome_completo" required 
+                           placeholder="Nome completo">
+                </div>
+                
+                <div class="grupo-campos">
+                    
+                    <div class="campo-formulario">
+                        <label for="crm"><i class="fas fa-id-card"></i> Nº Registro Profissional (CRM):</label>
+                        <input type="text" id="crm" name="crm" required 
+                               placeholder="Ex: 12345/SP" pattern="[A-Za-z0-9/]{5,15}">
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="data_nasc"><i class="fas fa-birthday-cake"></i> Data de Nascimento:</label>
+                        <input type="date" id="data_nasc" name="data_nascimento" required>
+                    </div>
+                </div>
+                
+                <div class="grupo-campos">
+                    <div class="campo-formulario">
+                        <label for="email_medico"><i class="fas fa-envelope"></i> Email Profissional:</label>
+                        <input type="email" id="email_medico" name="email_profissional" required 
+                               placeholder="email@clinicamedvida.com.br">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="especialidade"><i class="fas fa-stethoscope"></i> Especialidade Principal:</label>
+                        <select id="especialidade" name="especialidade" required>
+                            <option value="">Selecione...</option>
+                            <option value="CL">Clínica Geral</option>
+                            <option value="PE">Pediatria</option>
+                            <option value="DE">Dermatologia</option>
+                            <option value="CA">Cardiologia</option>
+                            <option value="OR">Ortopedia</option>
+                            <option value="NE">Neurologia</option>
+                            <option value="OF">Oftalmologia</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="disponibilidade"><i class="far fa-clock"></i> Horário de Atendimento:</label>
+                    <textarea id="disponibilidade" name="disponibilidade" rows="3" 
+                              placeholder="Ex: Segunda a Sexta, 9h às 18h"></textarea>
+                </div>
+
+                <button type="submit" class="botao-destaque"><i class="fas fa-user-plus"></i> Registrar Médico</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-coluna">
+                <h3>Clínica MedVida</h3>
+                <p>Cuidando da sua saúde com excelência e dedicação desde 2025.</p>
+                <div class="redes-sociais">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a Sexta: 8h às 20h</p>
+                <p>Sábados: 8h às 14h</p>
+                <p>Domingos: Fechado</p>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (11) 9xxxx-xxxx</p>
+                <p><i class="fas fa-envelope"></i> contato@xxxxxx.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> xxxxxxx, 000 - xxxxx</p>
+            </div>
+        </div>
+        <div class="rodape-direitos">
+            <p>&copy; 2025 Feito por Ivan Lisboa</p>
+        </div>
+    </footer>
+
+    <a href="#" class="botao-topo" id="botao-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Script JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

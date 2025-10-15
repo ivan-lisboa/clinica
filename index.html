@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica xxxxx - Cuidando da sua saúde</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Clínica médica especializada com atendimento humanizado e profissionais qualificados">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <i class="fas fa-heartbeat logo-icone"></i>
+            <h1>Clínica <span>xxxxx</span></h1>
+        </div>
+
+        <nav class="menu-navegacao">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-botao">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul class="menu-lista">
+                <li><a href="index.html" class="ativo"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="agendamento.html"><i class="far fa-calendar-alt"></i> Agendar consulta</a></li>
+                <li><a href="cadastro_paciente.html"><i class="fas fa-user-plus"></i> Registro de pacientes</a></li>
+                <li><a href="cadastro_medico.html"><i class="fas fa-user-md"></i> Registro Médico</a></li>
+                <li><a href="login.html" class="botao-login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-conteudo">
+            <h2>Sua saúde em <span>boas mãos</span></h2>
+            <p>Atendimento humanizado com profissionais qualificados para cuidar de você e sua família</p>
+            <div class="banner-botoes">
+                <a href="agendamento.html" class="botao-destaque"><i class="far fa-calendar-check"></i> Agendar Consulta</a>
+                <a href="#especialidades" class="botao-secundario"><i class="fas fa-info-circle"></i> Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="conteudo-principal">
+        <section class="cartoes-servicos">
+            <div class="cartao">
+                <div class="cartao-icone">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3>Consultas Médicas</h3>
+                <p>Atendimento com especialistas em diversas áreas da medicina para cuidar da sua saúde.</p>
+            </div>
+            
+            <div class="cartao">
+                <div class="cartao-icone">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Exames Clínicos</h3>
+                <p>Realizamos diversos exames com equipamentos modernos e resultados rápidos.</p>
+            </div>
+            
+            <div class="cartao">
+                <div class="cartao-icone">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Especialistas</h3>
+                <p>Equipe médica qualificada com especialistas em diversas áreas da saúde.</p>
+            </div>
+        </section>
+
+        <section id="especialidades" class="especialidades">
+            <h2 class="titulo-secao">Nossas Especialidades</h2>
+            <div class="especialidades-grid">
+                <div class="especialidade-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Cardiologia</h3>
+                </div>
+                <div class="especialidade-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Neurologia</h3>
+                </div>
+                <div class="especialidade-item">
+                    <i class="fas fa-bone"></i>
+                    <h3>Ortopedia</h3>
+                </div>
+                <div class="especialidade-item">
+                    <i class="fas fa-lungs"></i>
+                    <h3>Pneumologia</h3>
+                </div>
+                <div class="especialidade-item">
+                    <i class="fas fa-child"></i>
+                    <h3>Pediatria</h3>
+                </div>
+                <div class="especialidade-item">
+                    <i class="fas fa-eye"></i>
+                    <h3>Oftalmologia</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="depoimentos">
+            <h2 class="titulo-secao">O que nossos pacientes dizem</h2>
+            <div class="depoimentos-container">
+                <div class="depoimento">
+                    <div class="depoimento-texto">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Atendimento excelente! Médicos atenciosos e instalações modernas. Recomendo a todos.</p>
+                    </div>
+                    <div class="depoimento-autor">
+                        <p><strong>xxxxxx</strong></p>
+                    </div>
+                </div>
+                <div class="depoimento">
+                    <div class="depoimento-texto">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Sempre sou muito bem atendido. A equipe é muito profissional e o agendamento é rápido.</p>
+                    </div>
+                    <div class="depoimento-autor">
+                        <p><strong>xxxxxx</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato-rapido">
+            <div class="contato-info">
+                <h2>Precisa de ajuda?</h2>
+                <p>Entre em contato conosco para mais informações ou para agendar sua consulta por telefone</p>
+                <div class="contato-detalhes">
+                    <div><i class="fas fa-phone"></i> (11) 9xxxx-xxxx</div>
+                    <div><i class="fas fa-envelope"></i> contato@xxxxxx.com.br</div>
+                    <div><i class="fas fa-map-marker-alt"></i> xxxxxxx, 000 - xxxxx</div>
+                </div>
+            </div>
+            <div class="contato-botao">
+                <a href="agendamento.html" class="botao-destaque">Agendar Consulta</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-coluna">
+                <h3>Clínica MedVida</h3>
+                <p>Cuidando da sua saúde com excelência e dedicação desde 2025.</p>
+                <div class="redes-sociais">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a Sexta: 8h às 20h</p>
+                <p>Sábados: 8h às 14h</p>
+                <p>Domingos: Fechado</p>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (11) 9xxxx-xxxx</p>
+                <p><i class="fas fa-envelope"></i> contato@xxxxxx.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> xxxxxxx, 000 - xxxxx</p>
+            </div>
+        </div>
+        <div class="rodape-direitos">
+            <p>&copy; 2025 Feito por Ivan Lisboa</p>
+        </div>
+    </footer>
+
+    <a href="#" class="botao-topo" id="botao-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Script movido para arquivo externo -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consulta - Clínica </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Agende sua consulta na Clínica MedVida de forma rápida e fácil">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <i class="fas fa-heartbeat logo-icone"></i>
+            <h1>Clínica <span>xxxxx</span></h1>
+        </div>
+        
+        <nav class="menu-navegacao">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-botao">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul class="menu-lista">
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li> 
+                <li><a href="agendamento.html" class="ativo"><i class="far fa-calendar-alt"></i> Agendar Consulta</a></li>
+                <li><a href="cadastro_paciente.html"><i class="fas fa-user-plus"></i> Registro de Pacientes</a></li>
+                <li><a href="cadastro_medico.html"><i class="fas fa-user-md"></i> Registro Médico</a></li>
+                <li><a href="login.html" class="botao-login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="formulario-container agendamento">
+            <h2>Agendamento de Consulta</h2>
+            <p>Selecione a especialidade, o médico e a data/hora preferida para a sua consulta.</p>
+            
+            <form action="#" method="POST" class="formulario-agendamento">
+                
+                <div class="campo-formulario">
+                    <label for="nome_agendamento"><i class="fas fa-user"></i> Nome Completo:</label>
+                    <input type="text" id="nome_agendamento" name="nome_paciente" 
+                           placeholder="Seu nome completo">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="especialidade"><i class="fas fa-stethoscope"></i> Especialidade:</label>
+                    <select id="especialidade" name="especialidade" required>
+                        <option value="">Selecione a especialidade...</option>
+                        <option value="CL">Clínica Geral</option>
+                        <option value="PE">Pediatria</option>
+                        <option value="DE">Dermatologia</option>
+                        <option value="CA">Cardiologia</option>
+                        <option value="NE">Neurologia</option>
+                        <option value="OR">Ortopedia</option>
+                        <option value="OF">Oftalmologia</option>
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="medico"><i class="fas fa-user-md"></i> Médico (Opcional):</label>
+                    <select id="medico" name="medico">
+                        <option value="">Qualquer Médico</option>
+                        <option value="1">Dr. João Silva (Clínica Geral)</option>
+                        <option value="2">Dra. Ana Costa (Pediatria)</option>
+                        <option value="3">Dr. Carlos Mendes (Cardiologia)</option>
+                        <option value="4">Dra. Mariana Santos (Dermatologia)</option>
+                    </select>
+                </div>
+                
+                <div class="grupo-campos">
+                    <div class="campo-formulario">
+                        <label for="data"><i class="far fa-calendar-alt"></i> Data Desejada:</label>
+                        <input type="date" id="data" name="data_consulta" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="hora"><i class="far fa-clock"></i> Hora Preferida:</label>
+                        <input type="time" id="hora" name="hora_consulta" required>
+                    </div>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="observacoes"><i class="far fa-comment-alt"></i> Motivo da Consulta:</label>
+                    <textarea id="observacoes" name="observacoes" rows="4" 
+                              placeholder="Descreva brevemente o motivo do agendamento..."></textarea>
+                </div>
+                
+                <button type="submit" class="botao-destaque"><i class="far fa-calendar-check"></i> Confirmar Agendamento</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-coluna">
+                <h3>Clínica MedVida</h3>
+                <p>Cuidando da sua saúde com excelência e dedicação desde 2025.</p>
+                <div class="redes-sociais">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a Sexta: 8h às 20h</p>
+                <p>Sábados: 8h às 14h</p>
+                <p>Domingos: Fechado</p>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (11) 9xxxx-xxxx</p>
+                <p><i class="fas fa-envelope"></i> contato@xxxxxx.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> xxxxxxx, 000 - xxxxx</p>
+            </div>
+        </div>
+        <div class="rodape-direitos">
+            <p>&copy; 2025 Feito por Ivan Lisboa</p>
+        </div>
+    </footer>
+
+    <a href="#" class="botao-topo" id="botao-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Script JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
