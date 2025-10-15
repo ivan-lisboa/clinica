@@ -15,7 +15,7 @@ Registro de Médicos (cadastro_medico.html): Formulário de cadastro para novos 
 Linguagens HTML5 Estrutura semântica das páginas. Estilização CSS3 Layout responsivo, design e animações. Ícones Font Awesome 6.4.0 Ícones de alta qualidade para melhor UX. Interatividade JavaScript (Vanilla) Menu responsivo (hambúrguer) e botão "Voltar ao Topo" com smooth scrolling. Metodologia Mobile-First Uso extensivo de Media Queries para adaptação de layout.
 
 # Estrutura do Projeto
-clínica-medvida/ ├── index.html ├── agendamento.html ├── cadastro_paciente.html ├── cadastro_medico.html ├── login.html ├── style.css └── js/ └── main.js
+clínica/ ├── index.html ├── agendamento.html ├── cadastro_paciente.html ├── cadastro_medico.html ├── login.html ├── style.css └── js/ └── main.js
 
 # Detalhe do CSS
 O arquivo style.css utiliza Variáveis CSS (:root) para padronizar cores e tamanhos, facilitando a manutenção e a customização. O design é totalmente responsivo, garantindo a adaptação a diferentes dispositivos (desktops, tablets e celulares).
